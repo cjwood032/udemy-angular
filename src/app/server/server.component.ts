@@ -4,5 +4,7 @@ import {Component} from '@angular/core';
     templateUrl: './server.component.html'
 })
 export class ServerComponent {
+    serverID: number = 10; // you can assign types as so.
+    serverStatus = 'offline';
 
 }
