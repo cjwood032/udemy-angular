@@ -6,5 +6,13 @@ import {Component} from '@angular/core';
 export class ServerComponent {
     serverID: number = 10; // you can assign types as so.
     serverStatus = 'offline';
-
+    constructor(){
+        this.serverStatus = Math.random() > 0.5 ? 'online': 'offline';
+    }
+    getServerStatus(){
+        return this.serverStatus;
+    }
+    getColor(){
+        return this.serverStatus === 'online' ? 'green' : 'red';
+    }
 }
